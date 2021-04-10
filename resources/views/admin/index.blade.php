@@ -22,9 +22,6 @@
             <a href="#" style="background-color: #2c3e50">
                 <h4>إضافة خدمه</h4>
             </a>
-            <a href="{{route('admin.admin' , ['lang' => $lang == 'en' ? 'ar' : 'en'])}}" style="background-color: #2c3e50">
-                <h4>{{$lang == 'en' ? 'Change to Arabic' : 'تغيير اللغه الي الانجليزيه'}}</h4>
-            </a>
         </div>
         <div class="home_statics text-center">
             <h1 class="heading_title">احصائيات عامة للموقع</h1>
