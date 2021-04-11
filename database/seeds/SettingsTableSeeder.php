@@ -14,7 +14,8 @@ class SettingsTableSeeder extends Seeder
     {
         Setting::updateOrCreate(['id' => 1], [
             'site_name' => 'Shamort',
-            'image' => 'assets/img/logo'
+            'image' => 'assets/img/logo',
+            'language' => 'en'
         ]);
 
         Footer::updateOrCreate(['id' => 1], [
