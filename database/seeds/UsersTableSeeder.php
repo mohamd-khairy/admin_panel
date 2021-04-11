@@ -16,9 +16,10 @@ class UsersTableSeeder extends Seeder
     {
 
         User::create([
-            'first_name'           => 'Admin',
+            'first_name'     => 'Admin',
             'email'          => 'admin@admin.com',
             'password'       => bcrypt('password'),
+            'role'           => 'admin',
             'remember_token' => Str::random(60),
             'email_verified_at' => Carbon::now()
         ]);
