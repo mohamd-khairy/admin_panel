@@ -19,6 +19,7 @@
                 <td>{{__('admin.users.feilds.city')}}</td>
                 <td>{{__('admin.users.feilds.email')}}</td>
                 <td>{{__('admin.users.feilds.gender')}}</td>
+                <td>{{__('admin.users.feilds.role')}}</td>
                 <td>{{__('admin.control')}}</td>
             </tr>
             @foreach($users as $user)
@@ -32,6 +33,7 @@
                 <td>{{$user->city}}</td>
                 <td>{{$user->email}}</td>
                 <td>{{$user->gender ? 'male' : 'female'}}</td>
+                <td>{{$user->role}}</td>
                 <td>
                     <a href="{{ route('admin.edit_user', $user->id) }}" class="btn btn-primary">
                         <div class="glyphicon glyphicon-pencil"></div>

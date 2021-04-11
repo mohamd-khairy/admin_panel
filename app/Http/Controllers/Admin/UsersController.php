@@ -32,7 +32,8 @@ class UsersController extends Controller
             'mobile' => 'required',
             'country' => 'required',
             'city' => 'required',
-            'gender' => 'required'
+            'gender' => 'required',
+            'role' => 'required'
         ]);
 
         $data = $request->all();
@@ -58,7 +59,8 @@ class UsersController extends Controller
             'mobile' => 'required',
             'country' => 'required',
             'city' => 'required',
-            'gender' => 'required'
+            'gender' => 'required',
+            'role' => 'required'
         ]);
 
         $data = $request->all();
