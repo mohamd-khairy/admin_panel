@@ -28,6 +28,11 @@
                 <td> <img src="{{asset($data->$en ?? '')}}" style="width: 100px;">
                 </td>
             </tr>
+            @elseif($en == 'enum')
+            <tr>
+                <td>{{$ar[$lang == 'en' ? 'coulmn_en' :'coulmn_ar']}}</td>
+                <td>{{ $data[$ar['name']] ??  ''}}</td>
+            </tr>
             @else
             <tr>
                 <td>{{$lang =='en' ? title($en)   : $ar}}</td>
